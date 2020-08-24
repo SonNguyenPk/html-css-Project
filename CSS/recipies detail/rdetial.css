@@ -1,0 +1,96 @@
+/* SECTION 1 */
+.rdetail-block-1 {
+    background-image: url(/Image/leave_background.jpg);
+    background-size: cover;
+    height: 20rem;
+}
+
+/* SECTION 2 */
+/* block 1 */
+.rdetail-block-2 {}
+
+.rdetail-block-2__title {
+    width: 100%;
+    height: max-content;
+}
+
+.rdetail-block-2__level {
+    background-color: deeppink;
+    width: 10rem;
+    height: max-content;
+    padding: .5rem;
+}
+
+/* block 2 */
+.rdetail-block-2__row {
+    width: 100%;
+}
+
+
+.rdetail-block-2__col1 {
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.rdetail-block-2__col1>ul {
+    width: 60%;
+    height: max-content;
+    background-color: deeppink;
+    padding: 1rem;
+    list-style-type: none;
+}
+
+.rdetail-block-2__col2 {
+    width: 100%;
+    height: max-content;
+    padding: 1rem;
+
+}
+
+.rdetail-block-2__checklist {
+}
+
+.rdetail-block-2__formgroup{
+    margin-top: 2rem;
+}
+
+
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]+label {
+    padding-left: 2rem;
+    position: relative;
+}
+
+input[type="checkbox"]+label::before {
+    content: "";
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 3px;
+    border: 1px solid black;
+
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+input[type="checkbox"]:checked +label::before {
+    background-color: deeppink;
+}
+
+input[type="checkbox"]:checked+label::after {
+    content: "";
+    width: 0.3rem;
+    height: 0.6rem;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+
+    transform: rotate(45deg);
+
+    position: absolute;
+    top: 3px;
+    left: 5px;
+}
