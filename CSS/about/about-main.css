@@ -3,7 +3,6 @@
 .main-block-1 {
     background-image: url(/Image/leave_background.jpg);
     background-size: 100%;
-    height: 100px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -27,7 +26,7 @@
     padding: 0 15px;
 }
 
-.main-block-1__text > h2 {
+.main-block-1__text>h2 {
     width: max-content;
     padding: 10px;
 
@@ -45,13 +44,13 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .main-block-1__text > h2 {
+    .main-block-1__text>h2 {
         font-size: 3rem;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .main-block-1__text > h2 {
+    .main-block-1__text>h2 {
         font-size: 5rem;
     }
 }
@@ -71,18 +70,18 @@
 }
 
 .main-block2__content,
-.main-block2__content > h3,
-.main-block2__content > p {
+.main-block2__content>h3,
+.main-block2__content>p {
     /* margin-bottom: 65px; */
     margin-bottom: 30px;
 }
 
 .main-block2__content,
-.main-block2__row > a {
+.main-block2__row>a {
     width: 100%;
 }
 
-.main-block2__row > a > img {
+.main-block2__row>a>img {
     max-width: 100%;
 }
 
@@ -90,21 +89,21 @@
         padding-right: 15px;
     } */
 
-.main-block2__content > p {
+.main-block2__content>p {
     font-size: 12px;
     color: #838383;
     line-height: 1.7;
 }
 
 @media only screen and (min-width: 768px) {
-    .main-block2__content > p {
+    .main-block2__content>p {
         font-size: 14.1px;
         line-height: 2;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .main-block2__content > p {
+    .main-block2__content>p {
         font-size: 16.1px;
         line-height: 2;
 
@@ -112,7 +111,7 @@
     }
 }
 
-.main-block2__content > button {
+.main-block2__content>button {
     width: 150px;
     border-radius: 4px;
     background-color: deeppink;
@@ -151,7 +150,7 @@
     }
 }
 
-.main-block3__list > li {
+.main-block3__list>li {
     /* margin-right: 20px; */
     text-align: center;
 
@@ -159,7 +158,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .main-block3__list > li {
+    .main-block3__list>li {
         margin-right: 40px;
         margin-bottom: 40px;
         margin-top: 40px;
@@ -170,7 +169,7 @@
     }
 }
 
-.main-block3__list > li > h2 {
+.main-block3__list>li>h2 {
     /* font-size: 40px; */
     font-style: 40px;
 }
