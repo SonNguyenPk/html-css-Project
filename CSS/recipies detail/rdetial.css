@@ -7,7 +7,6 @@
 
 /* SECTION 2 */
 /* block 1 */
-.rdetail-block-2 {}
 
 .rdetail-block-2__title {
     width: 100%;
@@ -47,16 +46,11 @@
 
 }
 
-.rdetail-block-2__checklist {
-}
-
-.rdetail-block-2__formgroup{
+.rdetail-block-2__formgroup {
     margin-top: 2rem;
 }
 
-
-
-input[type="checkbox"]{
+input[type="checkbox"] {
     display: none;
 }
 
@@ -77,7 +71,7 @@ input[type="checkbox"]+label::before {
     left: 0;
 }
 
-input[type="checkbox"]:checked +label::before {
+input[type="checkbox"]:checked+label::before {
     background-color: deeppink;
 }
 
