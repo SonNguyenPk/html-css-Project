@@ -1,0 +1,117 @@
+/* BLOCK 4 */
+.footer {
+    background-size: 100%;
+}
+
+.footer__row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    height: 100%;
+    padding: 15px 0;
+}
+
+.footer__col1 {
+    /* width: 50%; */
+    width: 100%;
+    text-align: center;
+}
+
+.footer__col1 > img {
+    width: 100px;
+    height: 70px;
+}
+
+.footer__social {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.footer__social > li {
+    margin-right: 15px;
+}
+
+.footer__social > li > a {
+    color: white;
+}
+
+.footer__col2 {
+    width: 100%;
+    /* text-align: right; */
+    padding-top: 15px;
+    text-align: center;
+}
+
+.footer__menu {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    justify-content: center;
+    /* align-items: space-between; */
+    /* align-items: center; */
+
+    margin-bottom: 30px;
+}
+
+.footer__menu > li {
+    margin-right: 20px;
+}
+
+.footer__menu > li > a {
+    color: white;
+}
+.footer__col2 > p > span > a {
+    color: red;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .footer__col1,
+    .footer__col2 {
+        text-align: left;
+        padding-top: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer__social,
+    .footer__menu {
+        justify-content: flex-start;
+    }
+}
+
+/* Destop */
+
+@media only screen and (min-width: 992px) {
+    .footer__row {
+        flex-flow: row nowrap;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .footer__col1 {
+        width: 30%;
+    }
+    .footer__col2 {
+        width: 70%;
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .footer__social {
+        flex-flow: row nowrap;
+    }
+
+    .footer__menu {
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    .footer__menu > li:nth-child(5) {
+        margin-right: 0;
+    }
+}

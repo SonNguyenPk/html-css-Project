@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    padding: 0 20px;
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1176px;
+    }
+}
