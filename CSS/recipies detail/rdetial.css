@@ -11,13 +11,37 @@
 .rdetail-block-2__title {
     width: 100%;
     height: max-content;
+
 }
 
+
+
 .rdetail-block-2__level {
+    width: 100%;
+    height: max-content;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.rdetail-block-2__level>p {
     background-color: deeppink;
     width: 10rem;
     height: max-content;
     padding: .5rem;
+
+}
+
+.rdetail-block-2__level>p::after {
+    content: "";
+    width: 5rem;
+    height: 3rem;
+    background-color: deeppink;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: translate(109px, -3px) rotate(112deg);
 }
 
 /* block 2 */
@@ -25,26 +49,52 @@
     width: 100%;
 }
 
-
 .rdetail-block-2__col1 {
     width: 100%;
     background-color: whitesmoke;
-}
-
-.rdetail-block-2__col1>ul {
-    width: 60%;
-    height: max-content;
-    background-color: deeppink;
-    padding: 1rem;
-    list-style-type: none;
 }
 
 .rdetail-block-2__col2 {
     width: 100%;
     height: max-content;
     padding: 1rem;
+}
+
+/* col 1 */
+.rdetail-block-2__cookingtime {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 
 }
+
+.rdetail-block-2__cookingtime>ul {
+    width: 80%;
+    height: max-content;
+    background-color: deeppink;
+    padding: 1.5rem 3rem;
+    list-style-type: none;
+}
+
+.rdetail-block-2__cookingtime>ul::after {
+    content: "";
+    width: 40%;
+    height: 120%;
+    background-color: deeppink;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: translate(calc(100% - 1px), -3px) rotate(112deg);
+}
+
+
+
+
+.redetail-block-2__list {
+    padding: 1.5rem 3rem;
+}
+
 
 .rdetail-block-2__formgroup {
     margin-top: 2rem;
@@ -55,6 +105,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]+label {
+    display: block;
     padding-left: 2rem;
     position: relative;
 }
