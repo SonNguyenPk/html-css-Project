@@ -11,21 +11,75 @@
     <link rel="stylesheet" href="/CSS/header.css">
     <link rel="stylesheet" href="/CSS/footer.css">
     <link rel="stylesheet" href="/CSS/main.css">
-    <link rel="stylesheet" href="/CSS/recipies/recipies-main.css">
-    <link rel="stylesheet" href="/CSS/recipies detail/rdetial.css">
+    <link rel="stylesheet" href="/CSS/recipies.css">
+    <link rel="stylesheet" href="/CSS/rdetial.css">
 
 </head>
 
 <body>
+    <!-- ****************** HEADER************************** -->
     <header>
+        <!--START TOP BAR -->
+        <section class="top-bar">
+            <div class="container">
+                <!-- Header top -->
+                <div class="top-bar__social">
+                    <ul class="top-bar__social-list">
+                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                    <div class="top-bar__links">
+                        <!-- column 2 -->
+                        <a href="#">Register</a>
+                        <span>/</span>
+                        <a href="#">Login</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END TOP BAR -->
+        <!-- START BOTTOM BAR -->
+        <section class="bottom-bar">
+            <div class="container">
+                <div class="bottom-bar__row">
+                    <a href="#"><img src="/Image/LOGO.png" alt="NORDIC_CORDER"></a>
+                    <ul class="bottom-bar__menu">
+                        <li><a href="/Home page/index-home.html">Home</a></li>
+                        <li><a href="/Recipies page/index-recipies.html">Recipies</a></li>
+                        <li><a href="#">Recipe Detail</a></li>
+                        <li><a href="/About page/index-about.html">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="bottom-bar__button">
+                        <button>
+                            <i class="fas fa-bars"></i>
 
+                        </button>
+                        <ul class="bottom-bar__menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Recipies</a></li>
+                            <li><a href="#">Recipe Detail</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <button>
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <!-- END COL 3 -->
+                </div>
+            </div>
+        </section>
+        <!-- END BOTTOM BAR -->
     </header>
     <!-- MAIN -->
     <main>
         <!-- IMAGE -->
-        <section class="rdetail-block-1">
-
-        </section>
+        <section class="rdetail-block-1"></section>
         <!-- CHECK LIST -->
         <section class="rdetail-block-2">
             <div class="container">
@@ -46,78 +100,106 @@
             </div>
             <!-- CHECK LIST -->
             <div class="container">
-                <div class="redetail-block-2__row">
+                <div class="rdetail-block-2__row">
                     <div class="rdetail-block-2__col1">
-                        <div class="rdetail-block-2__cookingtime">
-                            <ul>
-                                <li>Pre: 15 mins</li>
-                                <li>Cook: 30 mins</li>
-                                <li>Yeild: 8 Servings</li>
-                            </ul>
+                        <div class="rdetail-block-2__coverlist">
+
+                            <div class="rdetail-block-2__cookingtime">
+                                <ul>
+                                    <li>Pre: 15 mins</li>
+                                    <li>Cook: 30 mins</li>
+                                    <li>Yeild: 8 Servings</li>
+                                </ul>
+                            </div>
+                            <div class="redetail-block-2__list">
+                                <h2>INGREDIENTS</h2>
+                                <form class="rdetial-block-2__checklist">
+                                    <div class="rdetail-block-2__formgroup">
+                                        <input type="checkbox" name="checklist" id="first">
+                                        <label for="first">4 Tbsp (57 gr) butter</label>
+                                    </div>
+                                    <div class="rdetail-block-2__formgroup">
+                                        <input type="checkbox" name="checklist" id="second">
+                                        <label for="second">2 large eggsr</label>
+                                    </div>
+                                    <div class="rdetail-block-2__formgroup">
+                                        <input type="checkbox" name="checklist" id="third">
+                                        <label for="third">2 yogurt containers granulated sugar</label>
+                                    </div>
+                                    <div class="rdetail-block-2__formgroup">
+                                        <input type="checkbox" name="checklist" id="fourth">
+                                        <label for="fourth">1 vanilla or plain yogurt, 170 container</label>
+                                    </div>
+                                    <div class="rdetail-block-2__formgroup">
+                                        <input type="checkbox" name="checklist" id="eighth">
+                                        <label for="eighth">White flour</label>
+                                    </div>
+                                    <div class="rdetail-block-2__formgroup">
+                                        <input type="checkbox" name="checklist" id="fifth">
+                                        <label for="fifth">1.5 yogurt containers milk</label>
+                                    </div>
+                                    <div class="rdetail-block-2__formgroup">
+                                        <input type="checkbox" name="checklist" id="sixth">
+                                        <label for="sixth">1/4 tsp cinnamon</label>
+                                    </div>
+                                    <div class="rdetail-block-2__formgroup">
+                                        <input type="checkbox" name="checklist" id="seventh">
+                                        <label for="seventh">1 cup fresh blueberries</label>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-
-                        <div class="redetail-block-2__list">
-                            <h2>INGREDIENTS</h2>
-                            <form class="rdetial-block-2__checklist">
-                                <div class="rdetail-block-2__formgroup">
-                                    <input type="checkbox" name="checklist" id="first">
-                                    <label for="first">4 Tbsp (57 gr) butter</label>
-                                </div>
-                                <div class="rdetail-block-2__formgroup">
-                                    <input type="checkbox" name="checklist" id="second">
-                                    <label for="second">2 large eggsr</label>
-                                </div>
-                                <div class="rdetail-block-2__formgroup">
-                                    <input type="checkbox" name="checklist" id="third">
-                                    <label for="third">2 yogurt containers granulated sugar</label>
-                                </div>
-                                <div class="rdetail-block-2__formgroup">
-                                    <input type="checkbox" name="checklist" id="fourth">
-                                    <label for="fourth">1 vanilla or plain yogurt, 170 container</label>
-                                </div>
-                                <div class="rdetail-block-2__formgroup">
-                                    <input type="checkbox" name="checklist" id="eighth">
-                                    <label for="eighth">White flour</label>
-                                </div>
-                                <div class="rdetail-block-2__formgroup">
-                                    <input type="checkbox" name="checklist" id="fifth">
-                                    <label for="fifth">1.5 yogurt containers milk</label>
-                                </div>
-                                <div class="rdetail-block-2__formgroup">
-                                    <input type="checkbox" name="checklist" id="sixth">
-                                    <label for="sixth">1/4 tsp cinnamon</label>
-                                </div>
-                                <div class="rdetail-block-2__formgroup">
-                                    <input type="checkbox" name="checklist" id="seventh">
-                                    <label for="seventh">1 cup fresh blueberries</label>
-                                </div>
-                            </form>
-                        </div>
-
-
                     </div>
                     <div class="rdetail-block-2__col2">
                         <ol>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui.
-                                Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in
-                                iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus.
-                                Orci varius natoque penatibus et magni.</li>
-                            <li>Sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti.
-                                Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor
-                                enim. Phasellus posuere vestibulum ipsum, eget lobortis purus.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui.
-                                Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in
-                                iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum</li>
-                            <li>Sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti.
-                                Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor
-                                enim. Phasellus posuere vestibulum ipsum, eget lobortis.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui.
-                                Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in
-                                iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus.
-                                Orci varius natoque penatibus et magni.</li>
+                            <li>
+                                <h2>01.</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui.
+                                    Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in
+                                    iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis
+                                    purus.
+                                    Orci varius natoque penatibus et magni.
+                                </p>
+                            </li>
+                            <li>
+                                <h2>02.</h2>
+                                <p>
+                                    Sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse
+                                    potenti.
+                                    Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor
+                                    enim. Phasellus posuere vestibulum ipsum, eget lobortis purus.
+                                </p>
+                            </li>
+                            <li>
+                                <h2>03.</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui.
+                                    Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in
+                                    iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum
+                                </p>
+                            </li>
+                            <li>
+                                <h2>04.</h2>
+                                <p>
+                                    Sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse
+                                    potenti.
+                                    Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor
+                                    enim. Phasellus posuere vestibulum ipsum, eget lobortis.
+                                </p>
+                            </li>
+                            <li>
+                                <h2>05.</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui.
+                                    Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in
+                                    iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis
+                                    purus.
+                                    Orci varius natoque penatibus et magni.
+                                </p>
+                            </li>
                         </ol>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -126,7 +208,38 @@
     </main>
     <!-- MAIN -->
     <footer>
-
+        <section class="footer" style="background-image: url(/Image/footer_about.jpg)">
+            <div class="container">
+                <div class="footer__row">
+                    <!-- FOOTER - COLUMN 1 -->
+                    <div class="footer__col1">
+                        <img src="/Image/LOGO.png" alt="">
+                        <ul class="footer__social">
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col2">
+                        <ul class="footer__menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Recipies</a></li>
+                            <li><a href="#">Recipe Detail</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <P style="color: white;">Copyright © 2020 All rights reserved | This template is made with
+                            🤍 by
+                            <span>
+                                <a href="#">Colorlib</a>
+                            </span>
+                        </P>
+                    </div>
+                </div>
+        </section>
     </footer>
 </body>
 

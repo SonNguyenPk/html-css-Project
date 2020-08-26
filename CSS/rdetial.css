@@ -6,6 +6,10 @@
 }
 
 /* SECTION 2 */
+.rdetail-block-2 {
+    padding: 1rem 0 3rem 0;
+}
+
 /* block 1 */
 
 .rdetail-block-2__title {
@@ -13,8 +17,6 @@
     height: max-content;
 
 }
-
-
 
 .rdetail-block-2__level {
     width: 100%;
@@ -51,16 +53,38 @@
 
 .rdetail-block-2__col1 {
     width: 100%;
-    background-color: whitesmoke;
 }
 
 .rdetail-block-2__col2 {
     width: 100%;
     height: max-content;
-    padding: 1rem;
+    padding: 2rem 1rem;
 }
 
-/* col 1 */
+@media only screen and (min-width:992px) {
+    .rdetail-block-2__row {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .rdetail-block-2__col1 {
+        width: 40%;
+        padding-bottom: 3rem;
+    }
+
+    .rdetail-block-2__col2 {
+        width: 60%;
+        padding: 0 1rem 3rem 1rem;
+    }
+}
+
+/* Inside col 1 */
+.rdetail-block-2__coverlist {
+    width: 100%;
+    height: max-content;
+    background-color: whitesmoke;
+}
+
 .rdetail-block-2__cookingtime {
     width: 100%;
     position: relative;
@@ -69,27 +93,30 @@
 }
 
 .rdetail-block-2__cookingtime>ul {
+    display: flex;
+    flex-flow: column;
     width: 80%;
     height: max-content;
     background-color: deeppink;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 2rem;
     list-style-type: none;
+
 }
 
-.rdetail-block-2__cookingtime::after {
+.rdetail-block-2__cookingtime>ul>li {
+    z-index: 2;
+}
+
+.rdetail-block-2__cookingtime>ul::after {
     content: "";
-    width: 40%;
-    height: 120%;
+    width: 100%;
+    height: 100%;
     background-color: deeppink;
     position: absolute;
-    z-index: -1;
     top: 0;
     left: 0;
-    transform: translate(calc(100% - 1px), -3px) rotate(112deg);
+    transform: translate(calc(26% - 1px), -3px) rotate(112deg);
 }
-
-
-
 
 .redetail-block-2__list {
     padding: 1.5rem 3rem;
@@ -138,4 +165,31 @@ input[type="checkbox"]:checked+label::after {
     position: absolute;
     top: 3px;
     left: 5px;
+}
+
+/* Inside col2 */
+
+
+.rdetail-block-2__col2>ol {
+    list-style-type: none;
+
+}
+
+.rdetail-block-2__col2>ol>li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    margin-bottom: 1.5rem;
+
+
+}
+
+.rdetail-block-2__col2>ol h2 {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.rdetail-block-2__col2>ol p {
+    padding-top: 1rem;
 }
