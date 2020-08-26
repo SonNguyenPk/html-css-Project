@@ -76,7 +76,7 @@
     list-style-type: none;
 }
 
-.rdetail-block-2__cookingtime>ul::after {
+.rdetail-block-2__cookingtime::after {
     content: "";
     width: 40%;
     height: 120%;
