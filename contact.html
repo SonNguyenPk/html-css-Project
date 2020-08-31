@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Contact</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/1d6fcc7a0b.js" crossorigin="anonymous"></script>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/CSS/header.css">
     <link rel="stylesheet" href="/CSS/main.css">
     <link rel="stylesheet" href="/CSS/about.css">
-    <link rel="stylesheet" href="/CSS/recipies.css">
+    <link rel="stylesheet" href="/CSS/contact.css">
 </head>
 
 <body>
@@ -64,76 +64,73 @@
         </section>
         <!-- END BOTTOM BAR -->
     </header>
-    <!-- ********************* MAIN*********************** -->
     <main>
-        <!-- BLOCK 1 - IMAGE AND TEXT -->
         <section class="main-block-1">
             <div class="main-block-1__text">
                 <h2>
-                    ABOUT US
+                    Contact
                 </h2>
             </div>
         </section>
-        <!-- END BLOCK 1 -->
-        <!-- BLOCK 2 - CONTENT -->
-        <section class="main-block2">
+        <section class="contact">
             <div class="container">
-                <div class="main-block2__row">
-                    <div class="main-block2__content">
-                        <h3>
-                            About our great team
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui.
-                            Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis.
-                            Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius
-                            natoque penatibus et magni. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean
-                            congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget
-                            lobortis purus. Orci varius natoque penatibus et magni.
-                        </p>
-                        <button>
-                            <p>Read more</p>
-                        </button>
-                    </div>
-                    <a href="#"><img src="/Image/Black_man.jpg" alt=""></a>
-                </div>
-            </div>
-        </section>
-        <!-- END BLOCK 2 -->
-        <!-- BLOCK 3 - LIST -->
-        <section class="main-block3" style="background-color: whitesmoke;">
-            <div class="container">
-                <div class="main-block3__row">
-                    <ul class="main-block3__list">
-                        <li>
-                            <img src="/Image/main_list_icon 1.png" alt="">
-                            <h2>1287</h2>
-                            <p>Amazing Recipies</p>
-                        </li>
-                        <li>
-                            <img src="/Image/main_list_icon 2.png" alt="">
-                            <h2>25</h2>
-                            <p>Wine Pairings</p>
+                <div class="contact__row">
+                    <div class="contact__col1">
+                        <h2>Leave a comment</h2>
+                        <form action="" class="contact__detail">
+                            <div class="contact__name">
+                                <input type="text" text-area name="" id="contactName" placeholder="Name">
+                                <label for="contactName"></label>
+                            </div>
+                            <div class="contact__email">
+                                <input type="email" name="" id="contactEmail" placeholder="Email">
+                                <label for="contactEmail"></label>
+                            </div>
+                            <div class="contact__title">
+                                <input type="text" name="" id="contactTitle" placeholder="Subject">
+                                <label for="contactTitle"></label>
+                            </div>
+                            <div class="contact__massage">
+                                <textarea name="contentMessage" id="contactMessage" cols="30" rows="10"
+                                    placeholder="Message"></textarea>
+                                <label for="contactMessage"></label>
 
-                        </li>
-                        <li>
-                            <img src="/Image/main_list_icon 3.png" alt="">
-                            <h2>1287</h2>
-                            <p>Amazing Recipies</p>
-                        </li>
-                        <li>
-                            <img src="/Image/main_list_icon 4.png" alt="">
-                            <h2>1287</h2>
-                            <p>Meat Recipies</p>
-                        </li>
-                    </ul>
+                            </div>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                    <div class="contact__col2">
+                        <img src="/Image/LOGO.png" alt="">
+                        <ul class="contact__information">
+                            <li>
+                                <h6>Address</h6>
+                                <p>481 Creekside Lane Avila</p>
+                                <p>Beach, CA 93424</p>
+                            </li>
+                            <li>
+                                <h6>Phone</h6>
+                                <p>+53 345 7953 32453</p>
+                                <p>+53 345 7557 822112</p>
+                            </li>
+                            <li>
+                                <h6>Email</h6>
+                                <p>sonnguyen.pk1301@gmail.com</p>
+                            </li>
+                        </ul>
+                        <ul class="footer__social">
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            </div>
         </section>
+
     </main>
-    <!--****************** FOOTER *********************-->
     <footer>
         <section class="footer" style="background-image: url(/Image/footer_about.jpg)">
             <div class="container">
@@ -169,7 +166,6 @@
         </section>
     </footer>
     <script src="/javascript/main.js"></script>
-
 </body>
 
 </html>

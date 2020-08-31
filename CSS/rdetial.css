@@ -15,7 +15,6 @@
 .rdetail-block-2__title {
     width: 100%;
     height: max-content;
-
 }
 
 .rdetail-block-2__level {
@@ -24,21 +23,33 @@
     position: relative;
     overflow: hidden;
 
+    margin-bottom: 1rem;
+}
+
+.rdetail-block-2__title>h2 {
+    font-size: 2rem;
 }
 
 .rdetail-block-2__level>p {
     background-color: deeppink;
     width: 10rem;
     height: max-content;
-    padding: .5rem;
+    padding: 0.5rem;
 
+    color: white;
+}
+
+.rdetail-block-2__title>ul.recipies__star {
+    margin: 2rem 0 1.5rem 0;
 }
 
 .rdetail-block-2__level>p::after {
     content: "";
     width: 5rem;
     height: 3rem;
+
     background-color: deeppink;
+
     position: absolute;
     z-index: -1;
     top: 0;
@@ -61,7 +72,7 @@
     padding: 2rem 1rem;
 }
 
-@media only screen and (min-width:992px) {
+@media only screen and (min-width: 992px) {
     .rdetail-block-2__row {
         display: flex;
         flex-flow: row nowrap;
@@ -90,17 +101,19 @@
     position: relative;
     overflow: hidden;
 
+    color: white;
 }
 
 .rdetail-block-2__cookingtime>ul {
     display: flex;
     flex-flow: column;
-    width: 80%;
+
+    width: 70%;
     height: max-content;
     background-color: deeppink;
+
     padding: 1.5rem 2rem;
     list-style-type: none;
-
 }
 
 .rdetail-block-2__cookingtime>ul>li {
@@ -109,19 +122,19 @@
 
 .rdetail-block-2__cookingtime>ul::after {
     content: "";
-    width: 100%;
+    width: 80%;
     height: 100%;
     background-color: deeppink;
+
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(calc(26% - 1px), -3px) rotate(112deg);
+    transform: translate(calc(35% - 1px), -3px) rotate(112deg);
 }
 
 .redetail-block-2__list {
     padding: 1.5rem 3rem;
 }
-
 
 .rdetail-block-2__formgroup {
     margin-top: 2rem;
@@ -169,10 +182,8 @@ input[type="checkbox"]:checked+label::after {
 
 /* Inside col2 */
 
-
 .rdetail-block-2__col2>ol {
     list-style-type: none;
-
 }
 
 .rdetail-block-2__col2>ol>li {
@@ -181,8 +192,6 @@ input[type="checkbox"]:checked+label::after {
     justify-content: space-between;
 
     margin-bottom: 1.5rem;
-
-
 }
 
 .rdetail-block-2__col2>ol h2 {

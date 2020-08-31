@@ -1,0 +1,164 @@
+.contact {
+    padding: 2rem 0 5rem 0;
+}
+
+.contact__row {
+    width: 100%;
+}
+
+.contact__col1,
+.contact__col2 {
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+@media only screen and (min-width:992px) {
+    .contact__row {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .contact__col1 {
+        width: 70%;
+        padding: 1.5rem 1rem;
+    }
+
+    .contact__col2 {
+        width: 30%;
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* form */
+form>div {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+form>div>input,
+form>div>textarea {
+    width: 100%;
+    background-color: #eff3f7;
+    border: none;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+@media only screen and (min-width:768px) {
+    .contact__detail {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .contact__name,
+    .contact__email {
+        width: 50%;
+    }
+
+    .contact__name {
+        padding-right: .5rem;
+    }
+
+    .contact__email {
+        padding-left: .5rem;
+    }
+
+    .contact__title,
+    .contact__message {
+        width: 100%;
+    }
+}
+
+.contact__message>textarea {
+    resize: none;
+}
+
+form>button {
+    width: 8rem;
+    height: 3rem;
+
+    border: none;
+    border-radius: 4px;
+    background-color: deeppink;
+
+    padding: .5rem;
+    margin-top: 1.5rem;
+
+    color: white;
+    font-size: 1rem;
+}
+
+/* contact information */
+
+.contact__col2>img {
+    width: 5rem;
+    height: 3rem;
+}
+
+ul.contact__information {
+    width: 100%;
+    list-style-type: none;
+    /* margin: 1rem 0; */
+}
+
+ul.contact__information>li {
+    padding: 1rem .5rem 1rem 0;
+
+}
+
+/* tablet */
+@media only screen and (min-width:768px) {
+    ul.contact__information {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    ul.contact__information>li {
+        max-width: 33.333333%;
+        width: max-content;
+
+        margin-right: 2rem;
+    }
+
+}
+
+/* Laptop */
+@media only screen and (min-width:992px) {
+    ul.contact__information {
+        display: block;
+        padding-left: 3rem;
+    }
+
+    ul.contact__information>li {
+        max-width: 100%;
+        width: max-content;
+    }
+}
+
+ul.contact__information>li>h6 {
+    font-size: 1rem;
+    color: deeppink;
+    text-decoration: underline;
+}
+
+ul.contact__information>li>p {
+    font-size: .8rem;
+    line-height: 2.1;
+}
+
+
+.contact__col2>.footer__social {
+    justify-content: flex-start;
+    padding: 1rem 0;
+    margin-top: 0;
+}
+
+.contact__col2>.footer__social>li {
+    margin-right: 1.5rem;
+}
+
+.contact__col2>.footer__social a {
+    color: black;
+}
