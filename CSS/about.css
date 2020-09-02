@@ -27,6 +27,7 @@
 }
 
 .main-block-1__text>h2 {
+    display: inline-block;
     width: max-content;
     padding: 10px;
 
@@ -51,7 +52,7 @@
 
 @media only screen and (min-width: 992px) {
     .main-block-1__text>h2 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 }
 

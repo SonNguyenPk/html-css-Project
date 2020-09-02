@@ -4,12 +4,16 @@
 }
 
 @media only screen and (min-width: 768px) {
+
+    /* TABLET*/
     .main-block-1 {
         height: 200px;
     }
 }
 
 @media only screen and (min-width: 992px) {
+
+    /* LAPTOP*/
     .main-block-1 {
         height: 300px;
     }
@@ -21,10 +25,10 @@
     align-items: center;
 
     height: 100%;
-    padding: 60px 15px;
+    padding: 3.8rem 1rem;
 }
 
-.main-block-1__text > h2 {
+.main-block-1__text>h2 {
     width: max-content;
     padding: 10px;
 
@@ -42,13 +46,13 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .main-block-1__text > h2 {
+    .main-block-1__text>h2 {
         font-size: 3rem;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .main-block-1__text > h2 {
+    .main-block-1__text>h2 {
         font-size: 5rem;
     }
 }
@@ -62,21 +66,22 @@
         transform: scale(1);
     }
 }
-/* PICTURE FIRST PAGE */
 
+/* LIST */
 .recipies__row {
-    padding: 60px 0;
+    padding: 4.5rem 0;
 }
 
-.recipies__row > h2 {
+.recipies__row>h2 {
+    font-size: 2rem;
     position: relative;
 }
 
-.recipies__row > h2::before {
+.recipies__row>h2::before {
     content: "";
     width: 56px;
-    border-top: 10px solid deeppink;
-    border-right: 10px solid transparent;
+    border-top: 4px solid deeppink;
+    border-right: 4px solid transparent;
 
     position: absolute;
     top: -10px;
@@ -88,34 +93,39 @@
 .recipies__list {
     list-style-type: none;
     width: 100%;
+    padding-top: 3rem;
 }
+
 /* Tablet */
 @media only screen and (min-width: 768px) {
     .recipies__list {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        margin: 0 -15px;
+        margin: 0 -1rem;
         list-style-type: none;
     }
-    .recipies__list > li {
-        padding: 0px 15px;
+
+    .recipies__list>li {
+        padding: 0 1rem;
         max-width: 50%;
     }
 }
+
 /* Destop */
 @media only screen and (min-width: 992px) {
-    .recipies__list > li {
-        padding: 0px 15px;
+    .recipies__list>li {
+        padding: 0 1rem;
         max-width: 33.333333%;
     }
 }
 
-.recipies__list > li {
-    margin-bottom: 20px;
+.recipies__list>li {
+    margin-bottom: 1.25rem;
     position: relative;
 }
-.recipies__list > li > img {
+
+.recipies__list>li>img {
     max-width: 100%;
 }
 
@@ -131,15 +141,22 @@
     overflow: hidden;
 }
 
+
+
 .recipies__subrate {
     height: max-content;
     width: 60%;
     background-color: deeppink;
-    padding: 15px;
+    padding: 1rem 0 1rem 1rem;
 }
+
+.recipies__subrate>p {
+    font-size: 14px;
+}
+
 .recipies__subrate::after {
     content: "";
-    width: 40%;
+    width: 70%;
     height: 100%;
     background-color: deeppink;
     position: absolute;
@@ -147,31 +164,20 @@
     z-index: -1;
 
     bottom: -0.6px;
-    transform: translate(calc(100% - 1px), -8px) rotate(-247deg);
+    right: 8%;
+    transform: rotate(-251deg);
 
-    /* transform: translate(calc(215% / 2 - 1px), -8px) rotate(-247deg); */
 }
-/* .recipies__rate::after {
-    content: "";
-    width: 100px;
-    height: 50px;
-    background-color: deeppink;
-
-    position: absolute;
-    bottom: 6.4px;
-    left: 50px;
-    transform: translate(95px, -16px) rotate(125deg);
-} */
 
 @media only screen and (min-width: 768px) {
     .recipies__rate {
-        left: 15px;
+        left: 1rem;
     }
 }
 
-.recipies__rate > p {
+.recipies__rate>p {
     color: white;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -183,15 +189,15 @@
     color: #cccccc;
 }
 
-.recipies__star > li > i {
+.recipies__star>li>i {
     margin-right: 5px;
 
     color: #e0e3e4;
     font-size: 10px;
 }
 
-ul.recipies__star :nth-child(-n + 4) > i {
-    color: rgb(228, 228, 145);
+ul.recipies__star :nth-child(-n + 4)>i {
+    color: #fbb710;
 }
 
 /* RECIPIES BUTTON */
@@ -205,17 +211,15 @@ ul.recipies__star :nth-child(-n + 4) > i {
     padding-bottom: 30px;
 }
 
-.recipies__page > li > button {
+.recipies__page>li>button {
     width: 40px;
     height: 40px;
     background-color: whitesmoke;
-    transition: 0.5s 0.25s ease-in-out;
 
-    margin-right: 5px;
+    margin-right: .5rem;
 }
 
-.recipies__page > li > button:hover {
+.recipies__page>li>button:hover {
     background-color: deeppink;
-    margin-right: 15px;
-    margin-left: 15px;
+
 }
