@@ -3,9 +3,7 @@
     padding: 1rem 0;
     background-color: #ff26af;
 }
-
-/* TTOP BAR SOCIAL LIST */
-
+/* TOP BAR --- SOCIAL LIST */
 .top-bar__social {
     display: flex;
     width: 100%;
@@ -23,7 +21,7 @@
     color: white;
 }
 
-/* TOP BAR --LINKS */
+/* TOP BAR -- LINKS */
 .top-bar__links {
     text-align: center;
     width: 100%;
@@ -194,8 +192,8 @@ ul#menu>li.active>a {
     ul#menu>li>a:hover {
         color: deeppink;
     }
-
     ul#menu>li {
         margin-right: 2rem;
     }
 }
+

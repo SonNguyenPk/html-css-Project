@@ -15,3 +15,30 @@ if (button) {
         nav.classList.toggle('show-hide');
     });
 }
+
+window.onscroll = function () {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("scroll-top").style.display = "block";
+    } else {
+        document.getElementById("scroll-top").style.display = "none";
+    }
+}
+
+const scrolltotop = document.querySelector('#scroll-top');
+// if (scrolltotop) {
+//     window.addEventListener('scroll', (e) => {
+//         scrolltotop.classList.add('scrollbutton');
+//     });
+// }
+if (scrolltotop) {
+    scrolltotop.addEventListener('click', (e) => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}

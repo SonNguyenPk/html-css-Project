@@ -1,0 +1,206 @@
+/* SECTION 1 BLOCK 1 - IMAGE*/
+.rdetail-block-1 {
+    background-image: url(/Image/Home-pictures/main-block-1.jpg);
+    background-size: cover;
+    height: 40rem;
+}
+
+/* SECTION 2 BLOCK 2 - CHECK LIST TITLE*/
+.rdetail-block-2 {
+    padding: 4rem 0 3rem 0;
+}
+
+.rdetail-block-2__title {
+    width: 100%;
+    height: max-content;
+}
+
+.rdetail-block-2__level {
+    width: 100%;
+    height: max-content;
+    position: relative;
+    overflow: hidden;
+
+    margin-bottom: 1rem;
+}
+
+.rdetail-block-2__title>h2 {
+    font-size: 2rem;
+}
+
+.rdetail-block-2__level>p {
+    background-color: deeppink;
+    width: 10rem;
+    height: max-content;
+    padding: 0.5rem;
+
+    color: white;
+}
+
+.rdetail-block-2__level>p::after {
+    content: "";
+    width: 5rem;
+    height: 3rem;
+
+    background-color: deeppink;
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: translate(109px, -3px) rotate(112deg);
+}
+
+.rdetail-block-2__title>ul.recipies__star {
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+/* SECTION 2 BLOCK 2 - CHECK LIST */
+.rdetail-block-2__row {
+    width: 100%;
+}
+
+.rdetail-block-2__col1 {
+    width: 100%;
+}
+
+.rdetail-block-2__col2 {
+    width: 100%;
+    height: max-content;
+    padding: 2rem 1rem;
+}
+
+/* SECTION 2 BLOCK 2 - CHECK LIST -- ON LAPTOP */
+@media only screen and (min-width: 992px) {
+    .rdetail-block-2__row {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .rdetail-block-2__col1 {
+        width: 40%;
+        padding-bottom: 3rem;
+    }
+
+    .rdetail-block-2__col2 {
+        width: 60%;
+        padding: 0 1rem 3rem 1rem;
+    }
+}
+
+/* COLUMN 1 */
+/* SECTION 2 BLOCK 2 - CHECK LIST TITLE */
+.rdetail-block-2__coverlist {
+    width: 100%;
+    height: max-content;
+    background-color: whitesmoke;
+}
+
+.rdetail-block-2__cookingtime {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    color: white;
+}
+
+.rdetail-block-2__cookingtime>ul {
+    display: flex;
+    flex-flow: column;
+    list-style-type: none;
+
+    width: 70%;
+    height: max-content;
+    padding: 1.5rem 2rem;
+
+    background-color: deeppink;
+}
+
+.rdetail-block-2__cookingtime>ul::after {
+    content: "";
+    width: 80%;
+    height: 100%;
+    background-color: deeppink;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(calc(35% - 1px), -3px) rotate(112deg);
+}
+
+.rdetail-block-2__cookingtime>ul>li {
+    z-index: 2;
+}
+
+/* SECTION 2 BLOCK 2 - CHECK LIST DETAILS */
+.redetail-block-2__list {
+    padding: 1.5rem 3rem;
+}
+
+.rdetail-block-2__formgroup {
+    margin-top: 2rem;
+}
+
+
+/*  CUSTOMIZE CHECK LIST BOX */
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label {
+    display: block;
+    padding-left: 2rem;
+    position: relative;
+}
+
+input[type="checkbox"]+label::before {
+    content: "";
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 3px;
+    border: 1px solid black;
+
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+input[type="checkbox"]:checked+label::before {
+    background-color: deeppink;
+}
+
+input[type="checkbox"]:checked+label::after {
+    content: "";
+    width: 0.3rem;
+    height: 0.6rem;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+
+    transform: rotate(45deg);
+
+    position: absolute;
+    top: 3px;
+    left: 5px;
+}
+
+/* COLUMN 2 */
+.rdetail-block-2__col2>ol {
+    list-style-type: none;
+}
+
+.rdetail-block-2__col2>ol>li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    margin-bottom: 1.5rem;
+}
+
+.rdetail-block-2__col2>ol h2 {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.rdetail-block-2__col2>ol p {
+    padding-top: 1rem;
+}

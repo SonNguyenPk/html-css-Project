@@ -1,5 +1,5 @@
 .contact {
-    padding: 2rem 0 5rem 0;
+    padding: 2rem 0;
 }
 
 .contact__row {
@@ -12,6 +12,7 @@
     padding: 1.5rem 0;
 }
 
+/* FROM LAPTOP */
 @media only screen and (min-width:992px) {
     .contact__row {
         display: flex;
@@ -29,7 +30,7 @@
     }
 }
 
-/* form */
+/* FORM*/
 form>div {
     width: 100%;
     margin-top: 1.5rem;
@@ -90,7 +91,7 @@ form>button {
     font-size: 1rem;
 }
 
-/* contact information */
+/* COLUMN 2 - CONTACT INFORMATION */
 
 .contact__col2>img {
     width: 5rem;
@@ -100,12 +101,37 @@ form>button {
 ul.contact__information {
     width: 100%;
     list-style-type: none;
-    /* margin: 1rem 0; */
 }
 
 ul.contact__information>li {
     padding: 1rem .5rem 1rem 0;
 
+}
+
+/*  CLOLUMN 2 - CONTACT INFORMATION - SOCIAL LIST */
+ul.contact__information>li>h6 {
+    font-size: 1rem;
+    color: deeppink;
+    text-decoration: underline;
+}
+
+ul.contact__information>li>p {
+    font-size: .8rem;
+    line-height: 2.1;
+}
+
+.contact__col2>.footer__social {
+    justify-content: flex-start;
+    padding: 1rem 0;
+    margin-top: 0;
+}
+
+.contact__col2>.footer__social>li {
+    margin-right: 1.5rem;
+}
+
+.contact__col2>.footer__social a {
+    color: black;
 }
 
 /* tablet */
@@ -135,30 +161,4 @@ ul.contact__information>li {
         max-width: 100%;
         width: max-content;
     }
-}
-
-ul.contact__information>li>h6 {
-    font-size: 1rem;
-    color: deeppink;
-    text-decoration: underline;
-}
-
-ul.contact__information>li>p {
-    font-size: .8rem;
-    line-height: 2.1;
-}
-
-
-.contact__col2>.footer__social {
-    justify-content: flex-start;
-    padding: 1rem 0;
-    margin-top: 0;
-}
-
-.contact__col2>.footer__social>li {
-    margin-right: 1.5rem;
-}
-
-.contact__col2>.footer__social a {
-    color: black;
 }

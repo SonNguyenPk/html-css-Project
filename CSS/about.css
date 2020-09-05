@@ -1,32 +1,19 @@
 /* BLOCK 1 */
-
-.main-block-1 {
+.about-block1 {
     background-image: url(/Image/leave_background.jpg);
     background-size: 100%;
 }
 
-@media only screen and (min-width: 768px) {
-    .main-block-1 {
-        height: 200px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .main-block-1 {
-        height: 300px;
-    }
-}
-
-.main-block-1__text {
+.about-block1__text {
     display: flex;
     justify-content: center;
     align-items: center;
 
     height: 100%;
-    padding: 60px 15px;
+    padding: 60px 1rem;
 }
 
-.main-block-1__text>h2 {
+.about-block1__text>h2 {
     display: inline-block;
     width: max-content;
     padding: 10px;
@@ -44,75 +31,93 @@
     animation-fill-mode: both;
 }
 
+/*  BLOCK 1 -- TABLET CHANGE HEIGHT & FONT SIZE*/
 @media only screen and (min-width: 768px) {
-    .main-block-1__text>h2 {
-        font-size: 3rem;
+    .about-block1 {
+        height: 200px;
+    }
+
+    .about-block1__text>h2 {
+        font-size: 2.8rem;
     }
 }
 
+/*  BLOCK 1 -- LAPTOP CHANGE HEIGHT & FONT SIZE*/
 @media only screen and (min-width: 992px) {
-    .main-block-1__text>h2 {
-        font-size: 4rem;
+    .about-block1 {
+        height: 300px;
+    }
+
+    .about-block1__text>h2 {
+        font-size: 3.5rem;
     }
 }
+
+/* BLOCK 1 -- ANIMATION */
+@keyframes h2animation {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
 
 /* BLOCK 2 */
-.main-block2__row {
+.about-block2__row {
     padding: 40px 0;
 }
 
-/* LAPTOP */
+/* BLOCK 2 -- LAPTOP */
 @media only screen and (min-width: 992px) {
-    .main-block2__row {
+    .about-block2__row {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
     }
 }
 
-.main-block2__content,
-.main-block2__content>h3,
-.main-block2__content>p {
-    /* margin-bottom: 65px; */
+.about-block2__content,
+.about-block2__content>h3,
+.about-block2__content>p {
     margin-bottom: 30px;
 }
 
-.main-block2__content,
-.main-block2__row>a {
+.about-block2__content,
+.about-block2__row>a {
     width: 100%;
 }
 
-.main-block2__row>a>img {
+.about-block2__row>a>img {
     max-width: 100%;
 }
 
-/* .main-block2__row .main-block2__content {
-        padding-right: 15px;
-    } */
-
-.main-block2__content>p {
+.about-block2__content>p {
     font-size: 12px;
     color: #838383;
     line-height: 1.7;
 }
 
+/*  BLOCK 2 -- TABLET  CHANGE FONT SIZE & LINE HEIGHT */
 @media only screen and (min-width: 768px) {
-    .main-block2__content>p {
+    .about-block2__content>p {
         font-size: 14.1px;
         line-height: 2;
     }
 }
 
+/*  BLOCK 2 -- LAPTOP  CHANGE FONT SIZE & LINE HEIGHT */
 @media only screen and (min-width: 992px) {
-    .main-block2__content>p {
-        font-size: 16.1px;
+    .about-block2__content>p {
+        font-size: 1rem;
         line-height: 2;
-
-        padding-right: 15px;
+        padding-right: 1rem;
     }
 }
 
-.main-block2__content>button {
+.about-block2__content>button {
     width: 150px;
     border-radius: 4px;
     background-color: deeppink;
@@ -120,46 +125,38 @@
     font-size: large;
     color: white;
     font-weight: 700;
-    padding: 15px 20px;
+    padding: 1rem 20px;
 }
 
 /* BLOCK 3 */
-
-.main-block3__row {
+.about-block3__row {
     padding: 50px 0;
-    /* height: 500px; */
-    /* padding: 154px 0; */
 }
 
-.main-block3__list {
-    /* display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center; */
-
+.about-block3__list {
     list-style-type: none;
-
     height: 100%;
 }
 
+
+.about-block3__list>li {
+    text-align: center;
+}
+
+.about-block3__list>li>h2 {
+    font-style: 40px;
+}
+
+/*  BLOCK 3 - TABLET AND LAPTOP */
 @media only screen and (min-width: 768px) {
-    .main-block3__list {
+    .about-block3__list {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: center;
     }
-}
 
-.main-block3__list>li {
-    /* margin-right: 20px; */
-    text-align: center;
-
-    /* width: 100%; */
-}
-
-@media only screen and (min-width: 768px) {
-    .main-block3__list>li {
+    .about-block3__list>li {
         margin-right: 40px;
         margin-bottom: 40px;
         margin-top: 40px;
@@ -168,9 +165,4 @@
 
         height: 100%;
     }
-}
-
-.main-block3__list>li>h2 {
-    /* font-size: 40px; */
-    font-style: 40px;
 }

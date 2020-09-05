@@ -1,73 +1,4 @@
-.main-block-1 {
-    background-image: url(/Image/leave_background.jpg);
-    background-size: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-
-    /* TABLET*/
-    .main-block-1 {
-        height: 200px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-
-    /* LAPTOP*/
-    .main-block-1 {
-        height: 300px;
-    }
-}
-
-.main-block-1__text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 100%;
-    padding: 3.8rem 1rem;
-}
-
-.main-block-1__text>h2 {
-    width: max-content;
-    padding: 10px;
-
-    background-color: deeppink;
-    border-radius: 4px;
-
-    font-size: 2rem;
-    font-weight: 900;
-    color: white;
-
-    animation: h2animation;
-    animation-delay: 0.1s;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-@media only screen and (min-width: 768px) {
-    .main-block-1__text>h2 {
-        font-size: 3rem;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .main-block-1__text>h2 {
-        font-size: 5rem;
-    }
-}
-
-@keyframes h2animation {
-    from {
-        transform: scale(0);
-    }
-
-    to {
-        transform: scale(1);
-    }
-}
-
-/* LIST */
+/* SECTION RECIPIES - LIST */
 .recipies__row {
     padding: 4.5rem 0;
 }
@@ -88,15 +19,13 @@
     left: 0;
 }
 
-/* LIST */
-
 .recipies__list {
     list-style-type: none;
     width: 100%;
     padding-top: 3rem;
 }
 
-/* Tablet */
+/* SECTION RECIPIES - LIST -- TABLET */
 @media only screen and (min-width: 768px) {
     .recipies__list {
         display: flex;
@@ -112,7 +41,7 @@
     }
 }
 
-/* Destop */
+/* SECTION RECIPIES - LIST -- LAPTOP */
 @media only screen and (min-width: 992px) {
     .recipies__list>li {
         padding: 0 1rem;
@@ -141,7 +70,12 @@
     overflow: hidden;
 }
 
-
+/* CHANGE LEFT POSITION ON TABLET AND OVER */
+@media only screen and (min-width: 768px) {
+    .recipies__rate {
+        left: 1rem;
+    }
+}
 
 .recipies__subrate {
     height: max-content;
@@ -155,24 +89,20 @@
 }
 
 .recipies__subrate::after {
+    /* DRAW RIGHT EDGE*/
     content: "";
     width: 70%;
-    height: 100%;
+    height: 90px;
     background-color: deeppink;
-    position: absolute;
 
     z-index: -1;
 
+    position: absolute;
+    /* LI - RELATIVE*/
     bottom: -0.6px;
     right: 8%;
-    transform: rotate(-251deg);
+    transform: translate(0, -10px) rotate(-251deg);
 
-}
-
-@media only screen and (min-width: 768px) {
-    .recipies__rate {
-        left: 1rem;
-    }
 }
 
 .recipies__rate>p {
@@ -182,6 +112,7 @@
 }
 
 .recipies__star {
+    /* STARS RATE*/
     display: flex;
     flex-flow: row nowrap;
     list-style-type: none;
@@ -200,8 +131,7 @@ ul.recipies__star :nth-child(-n + 4)>i {
     color: #fbb710;
 }
 
-/* RECIPIES BUTTON */
-
+/* RECIPIES PAGE BUTTONS */
 .recipies__page {
     display: flex;
     flex-flow: row nowrap;

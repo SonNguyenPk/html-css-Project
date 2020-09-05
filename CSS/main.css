@@ -21,6 +21,7 @@ body {
         max-width: 720px;
     }
 }
+
 @media only screen and (min-width: 992px) {
     .container {
         max-width: 960px;
@@ -31,4 +32,35 @@ body {
     .container {
         max-width: 1176px;
     }
+}
+
+
+/* SCROLL TO TOP BUTTON */
+
+#scroll-top {
+    display: none;
+
+    width: 40px;
+    height: 40px;
+    background-color: deeppink;
+
+    transition: all .5s ease-in-out;
+
+    position: fixed;
+    right: 1rem;
+    bottom: 10vh;
+
+    opacity: 0.6;
+}
+
+#scroll-top>i {
+    color: white;
+}
+
+@media only screen and (min-width: 992px) {
+    #scroll-top:hover {
+        border-radius: 50%;
+        opacity: 1;
+    }
+
 }
