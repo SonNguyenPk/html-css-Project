@@ -69,6 +69,15 @@
     text-decoration: none;
 }
 
+.footer__menu>li.active>a {
+    font-weight: 600;
+    color: deeppink;
+}
+
+.footer__menu>li:hover>a {
+    color: deeppink;
+}
+
 .footer__col2>p>span>a {
     color: deeppink;
 }
