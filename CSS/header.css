@@ -96,11 +96,6 @@
     transition: all 1s ease;
 }
 
-.bottom-bar__row>button:nth-child(2).button--active {
-    background-color: red;
-    border-radius: 50%;
-}
-
 .bottom-bar__row>button:nth-child(2).button--active>i {
     transform: rotate(90deg);
 }
