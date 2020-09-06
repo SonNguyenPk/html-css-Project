@@ -40,17 +40,19 @@ body {
 #scroll-top {
     display: none;
 
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 4px;
+
     background-color: deeppink;
+    opacity: 0.6;
 
     transition: all .5s ease-in-out;
 
     position: fixed;
     right: 1rem;
-    bottom: 10vh;
-
-    opacity: 0.6;
+    bottom: 12vh;
 }
 
 #scroll-top>i {

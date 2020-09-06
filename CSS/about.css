@@ -1,6 +1,6 @@
 /* BLOCK 1 */
 .about-block1 {
-    background-image: url(/Image/leave_background.jpg);
+    background-image: url(/Image/background.jpg);
     background-size: 100%;
 }
 
@@ -64,10 +64,9 @@
     }
 }
 
-
 /* BLOCK 2 */
 .about-block2__row {
-    padding: 40px 0;
+    padding: 5rem 0;
 }
 
 /* BLOCK 2 -- LAPTOP */
@@ -141,6 +140,7 @@
 
 .about-block3__list>li {
     text-align: center;
+    padding: 1.5rem 0;
 }
 
 .about-block3__list>li>h2 {

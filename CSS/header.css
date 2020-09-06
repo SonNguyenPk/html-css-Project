@@ -3,6 +3,7 @@
     padding: 1rem 0;
     background-color: #ff26af;
 }
+
 /* TOP BAR --- SOCIAL LIST */
 .top-bar__social {
     display: flex;
@@ -83,42 +84,56 @@
     float: right;
     width: 40px;
     height: 40px;
+    border: none;
     border-radius: 4px;
     background-color: deeppink;
 }
 
 .bottom-bar__row>button:nth-child(2) {
+    background-color: whitesmoke;
     margin-left: 0.5rem;
     order: 1;
+    transition: all 1s ease;
 }
+
+.bottom-bar__row>button:nth-child(2).button--active {
+    background-color: red;
+    border-radius: 50%;
+}
+
+.bottom-bar__row>button:nth-child(2).button--active>i {
+    transform: rotate(90deg);
+}
+
 
 /* Mobile Navigation menu */
 #menu {
-    display: none;
     width: 100vw;
-    max-height: max-content;
-
+    max-height: 0;
     list-style-type: none;
 
     position: absolute;
     top: 100%;
     left: -20px;
-    z-index: 1;
+    z-index: 99;
+    overflow: hidden;
 
+    transition: max-height .5s linear;
 }
 
 #menu.show-hide {
-    display: block;
+    max-height: 250px;
 }
 
 ul#menu>li {
     display: block;
     flex-flow: row nowrap;
     width: 100%;
-    max-height: 40px;
+    max-height: 50px;
     background-color: whitesmoke;
     border-top: 1px solid #ededed;
 }
+
 
 ul#menu>li>a {
     display: block;
@@ -136,16 +151,18 @@ ul#menu>li.active>a {
     color: deeppink;
 }
 
-/* Laptop Navigation menu */
+/* Tablet Navigation menu */
 @media only screen and (min-width: 768px) {
     ul#menu {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
-        width: auto;
 
         flex: 1 0 auto;
+        width: auto;
+        max-height: max-content;
+
         position: static;
     }
 
@@ -172,9 +189,8 @@ ul#menu>li.active>a {
 
         width: max-content;
         height: max-content;
-        background-color: transparent;
-
         border-top: none;
+        background-color: transparent;
 
         margin-right: 1.5rem;
     }
@@ -192,8 +208,8 @@ ul#menu>li.active>a {
     ul#menu>li>a:hover {
         color: deeppink;
     }
+
     ul#menu>li {
         margin-right: 2rem;
     }
 }
-

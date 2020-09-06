@@ -90,19 +90,25 @@
 /* BLOCK 3 */
 .home-block-3 {
     background-color: whitesmoke;
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 
 .home-block-3__row {
     display: flex;
     flex-flow: row wrap;
+    align-items: flex-start;
 }
 
 .home-block-3__col-1,
 .home-block-3__col-2 {
     position: relative;
     width: 100%;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.home-block-3__col-1>h2,
+.home-block-3__col-2>h2 {
+    margin-bottom: 1rem;
 }
 
 .home-block-3__col-1>h2::before,
@@ -120,7 +126,7 @@
 .home-block-3__col-3 {
     position: relative;
     width: 100%;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.5rem;
 
     overflow: hidden;
 }
@@ -131,7 +137,9 @@
     .home-block-3__col-1,
     .home-block-3__col-2 {
         max-width: 50%;
+        margin-bottom: 0;
         padding-bottom: 1.3rem;
+        height: 100%;
     }
 
     .home-block-3__col-3 {
@@ -142,9 +150,6 @@
 
 /* BLOCK 3 -- Laptop */
 @media only screen and (min-width: 992px) {
-    .home-block-3__row {
-        align-items: center;
-    }
 
     .home-block-3__col-1,
     .home-block-3__col-2,
@@ -155,17 +160,22 @@
 
 .home-block-3__list {
     list-style-type: none;
-    margin-top: 25px;
+    padding-top: 25px;
 }
 
 .home-block-3__list>li {
     display: flex;
     flex-flow: row nowrap;
-    margin-bottom: 1.3rem;
+    padding: .6rem .5rem .6rem 0;
+}
+
+.home-block-3__list>li>img {
+    max-width: 77px;
+    max-height: 77px;
 }
 
 .home-block-3__rate {
-    margin-left: 1.3rem;
+    padding-left: 1.3rem;
 }
 
 .home-block-3__rate>span {
@@ -179,6 +189,7 @@
 
 /* BLOCK 3- COLUMN 3 */
 .home-block-3__col-3 {
+    align-self: center;
     box-shadow: 5px 5px .6rem 3px rgba(0, 0, 0, 0.15);
 }
 
@@ -213,12 +224,12 @@
 }
 
 .home-block-3__review {
-    padding: 2rem 2.2rem;
+    padding: 2.5rem 2.5rem;
 }
 
 .home-block-3__review>h5 {
     font-size: 1.3rem;
-    margin-bottom: .6rem;
+    margin-bottom: 1rem;
 }
 
 .home-block-3__review>h6 {
@@ -273,6 +284,7 @@
 
 /*  BLOCK 4 -- TABLET */
 @media only screen and (min-width: 768px) {
+
     .home-block-4__row {
         display: flex;
         flex-flow: column wrap;
@@ -292,6 +304,10 @@
 
 /* BLOCK 4 -- LAPTOP */
 @media only screen and (min-width: 992px) {
+    .home-block-4 {
+        padding: 5rem 0;
+    }
+
     .home-block-4__row {
         flex-flow: row wrap;
         justify-content: space-around;

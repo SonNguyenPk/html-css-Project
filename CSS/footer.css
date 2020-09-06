@@ -6,8 +6,7 @@
 
 @media only screen and (min-width: 992px) {
     .footer {
-        height: 15rem;
-        background-position-y: -27rem;
+        height: 14rem;
     }
 }
 
@@ -62,7 +61,7 @@
 }
 
 .footer__menu>li {
-    margin-right: 20px;
+    padding: .6rem 1.2rem;
 }
 
 .footer__menu>li>a {
@@ -86,6 +85,10 @@
     .footer__social,
     .footer__menu {
         justify-content: flex-start;
+    }
+
+    .footer__menu>li {
+        padding: 0  1.5rem 0 0;
     }
 }
 

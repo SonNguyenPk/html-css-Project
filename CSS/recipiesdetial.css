@@ -93,6 +93,7 @@
 .rdetail-block-2__coverlist {
     width: 100%;
     height: max-content;
+    padding-bottom: 3.5rem;
     background-color: whitesmoke;
 }
 
