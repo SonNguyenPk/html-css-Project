@@ -120,7 +120,7 @@
 .rdetail-block-2__cookingtime>ul::after {
     content: "";
     width: 80%;
-    height: 120px;
+    height: 100px;
     background-color: deeppink;
 
     position: absolute;

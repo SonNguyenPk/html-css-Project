@@ -97,7 +97,7 @@
     }
 
     .footer__menu>li {
-        padding: 0  1.5rem 0 0;
+        padding: 0 1.5rem 0 0;
     }
 }
 
@@ -124,6 +124,7 @@
     .footer__menu {
         flex-flow: row nowrap;
         justify-content: flex-end;
+        margin-right: -1.2rem;
     }
 
     .footer__menu>li:nth-child(5) {
